@@ -1,20 +1,16 @@
 
-public class Funcionario {
+public abstract class Funcionario {
 	
 	private String nome;
 	private String cpf;
-	private double salario;
+	protected double salario;
 	
 	public Funcionario() {
 		
 	}
 	
-	//
-	public double getBonificacao() {
-		return this.salario * 0.1;
-	}
-	
-	
+	public abstract double getBonificacao();
+		
 	//default Getters e Setters
 	public String getNome() {
 		return nome;
